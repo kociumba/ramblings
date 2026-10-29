@@ -1,3 +1,19 @@
 @use "./variables.scss" as *;
+@use "./base.scss";
 
-// put your custom CSS here!
+@font-face {
+	font-family: 'Iosevka Web';
+	font-display: swap;
+	font-weight: 400;
+	font-stretch: normal;
+	font-style: normal;
+	src: url('/static/fonts/WOFF2/Iosevka-Regular.woff2') format('woff2');
+}
+
+:root {
+  --bodyFont: "Iosevka Web", monospace !important;
+  --font-interface: "Iosevka Web", monospace !important;
+  --font-text: "Iosevka Web", monospace !important;
+  --headerFont: "Iosevka Web", monospace !important;
+  --codeFont: "Iosevka Web", monospace !important;
+}

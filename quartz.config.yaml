@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
-  pageTitle: Quartz 5
+  pageTitle: D.O.G.S (dump of general substance)
   pageTitleSuffix: ""
   enableSPA: true
   enablePopovers: true
@@ -13,12 +13,15 @@ configuration:
     - templates
     - .obsidian
   theme:
-    fontOrigin: googleFonts
+    fontOrigin: local
     cdnCaching: true
     typography:
-      header: Schibsted Grotesk
-      body: Source Sans Pro
-      code: IBM Plex Mono
+      header: Iosevka Web
+      body: Iosevka Web
+      code: Iosevka Web
+      # header: Schibsted Grotesk
+      # body: Source Sans Pro
+      # code: IBM Plex Mono
     colors:
       lightMode:
         light: "#faf8f8"
@@ -99,11 +102,11 @@ plugins:
     enabled: false
     order: 92
   - source: "@quartz-community/quartz-fonts"
-    enabled: true
-  - source: "@quartz-themes/core"
     enabled: false
+  - source: "@quartz-themes/core"
+    enabled: true
     options:
-      theme: tokyo-night
+      theme: material-gruvbox
       mode: both
   - source: "@quartz-community/remove-draft"
     enabled: true
@@ -119,7 +122,7 @@ plugins:
   - source: "@quartz-community/favicon"
     enabled: true
   - source: "@quartz-community/og-image"
-    enabled: true
+    enabled: false
   - source: "@quartz-community/cname"
     enabled: true
   - source: "@quartz-community/canvas-page"
@@ -203,8 +206,8 @@ plugins:
     enabled: true
     options:
       links:
-        GitHub: https://github.com/jackyzha0/quartz
-        Discord Community: https://discord.gg/cRFFHYye7t
+        GitHub: https://github.com/kociumba
+        # Discord Community: https://discord.gg/cRFFHYye7t
     layout:
       position: footer
       priority: 50
@@ -230,6 +233,7 @@ plugins:
         - description
         - tags
         - aliases
+        - topic difficulty
       excludedProperties: []
       hidePropertiesView: false
       delimiters: ---
