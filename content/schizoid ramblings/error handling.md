@@ -1,8 +1,8 @@
 ---
 publish: "true"
 created: 2026-06-20T11:10:01.900Z
-modified: 2026-10-29T12:02:20.000Z
-published: 2026-10-29T12:02:20.000Z
+modified: 2026-10-29T21:37:36.000Z
+published: 2026-10-29T21:37:36.000Z
 topic difficulty: beginner
 "\n```odin\ndo_something ": proc() -> Maybe(int) {
 ---
@@ -11,7 +11,7 @@ Exceptions are retarded and break control flow, they also can have a considerabl
 
 I say this since exceptions are modeled after human patterns of though instead of how computers work, this causes issues when a program written with a language tailored for computers has to perform actions tailored for human thinking, mainly performance hits due to stack unwinding, and control flow redirection with `try/catch/finally` blocks
 
-Specific performance impacts of exceptions ins different languages are hard to discuss since they vary between compilers and language versions due to backend implementations
+Specific performance impacts of exceptions in different languages are hard to discuss since they vary between compilers and language versions due to backend implementations
 
 But the biggest issue of exceptions is universal to all implementations, that is **they hijack control flow**, making the execution order of your code unpredictable
 
